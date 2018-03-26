@@ -36,4 +36,27 @@ Click on "Edit security groups", then set:
 * Set the "Port Range" to "8888"
 * Select "Anywhere" as the "Source"
 * Click "Review and Launch" (again)
-<img src="add-security-group-screenshot.png" width="480" alt="add-security-group" />
+<img src="add-security-group-screenshot.png" width="800" alt="add-security-group" />
+
+4. Launch the Instance
+
+Click on the “Launch” button to launch your GPU instance!
+
+5. Proceed Without a Key Pair
+
+In this case the AMI has a pre-configured user account and password, so you can select “Proceed without a key pair” and click the “Launch Instances” button (for real this time!).
+
+Next, click the “View Instances” button to go to the EC2 Management Console and watch your instance boot.
+
+6. Stop and terminate
+
+From this point on, AWS will charge you for a running an EC2 instance.
+
+Most importantly, remember to “stop” (i.e. shutdown) your instances when you are not using them. Otherwise, your instances might run for a day or a week or a month without you remembering, and you’ll wind up with a large bill!
+
+AWS charges primarily for running instances, so most of the charges will cease once you stop the instance. However, there are smaller storage charges that continue to accrue until you “terminate” (i.e. delete) the instance.
+
+7. Log in
+
+After launch, your instance may take a few minutes to initialize. Once you see “2/2 checks passed” on the EC2 Management Console, your instance is ready for you to log in.
+<img src="ec2-dashboard.png" width="800" alt="ec2-dashboard" />
