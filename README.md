@@ -14,5 +14,16 @@ Install the car nanodegree starter kit if you have not already done so: [CarND T
 If you have access to a GPU, you should follow the TensorFlow instructions for installing [TensorFlow with GPU support](https://www.tensorflow.org/install/#optional_install_cuda_gpus_on_linux)
 
 **Amazon Web Services**
-* Launch an Instance: Visit the EC2 Management [Console](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Home:), click "Launch Instance", choose "Community AMIs", search for the “udacity-carnd” AMI and click "select".
-* Select the Instance type: Filter the instance list to only show “GPU instances”, select the *g2.2xlarge* instance type. Finally, click on the “Review and Launch” button:
+1. Launch an Instance:
+
+Visit the EC2 Management [Console](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Home:), click "Launch Instance", choose "Community AMIs", search for the “**udacity-carnd**” AMI and click "select".
+
+2. Select the Instance type: 
+
+Filter the instance list to only show “GPU instances”, select the **g2.2xlarge** instance type. Finally, click on the “Review and Launch” button. Then increase the storage size to 16 GB (or more, if necessary, I choose 32 GB).
+
+3. Configure the Security Group:
+
+Most of these configurations are already set up on the udacity-carnd AMI. However, you must also configure the security group correctly when you launch the instance.
+
+By default, AWS restricts access to most ports on an EC2 instance. In order to access the Jupyter notebook, you must configure the AWS Security Group to allow access to port 8888.
